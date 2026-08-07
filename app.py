@@ -117,85 +117,41 @@ unsafe_allow_html=True
 
 
 # ==========================================================
-# PATH PROJECT
-# deployment/app.py
-#
-# naik satu folder ke revisi
+# PATH DEPLOYMENT
 # ==========================================================
 
-
 BASE_DIR = os.path.dirname(
-
-    os.path.dirname(
-
-        os.path.abspath(__file__)
-
-    )
-
+    os.path.abspath(__file__)
 )
 
-
-
-# DATA
 
 DATA_PATH = os.path.join(
-
     BASE_DIR,
-
-    "data",
-
-    "data_final",
-
     "dataset_final_lexicon.csv"
-
 )
 
 
-
-# MODEL
-
 MODEL_PATH = os.path.join(
-
     BASE_DIR,
-
-    "models",
-
     "svm_baseline.pkl"
-
 )
 
 
 TFIDF_PATH = os.path.join(
-
     BASE_DIR,
-
-    "models",
-
     "tfidf_vectorizer.pkl"
-
 )
 
 
 LABEL_PATH = os.path.join(
-
     BASE_DIR,
-
-    "models",
-
     "label_encoder.pkl"
-
 )
 
 
-
-# RESULT
-
 RESULT_DIR = os.path.join(
-
     BASE_DIR,
-
     "result"
-
 )
 
 
